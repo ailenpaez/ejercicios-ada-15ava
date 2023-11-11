@@ -1,6 +1,6 @@
 import net from "node:net";
 import dotenv from "dotenv";
-import { m1, m2, m3, m4, m5, m6, m7,m9} from "./controller.js";
+import { m1, m2, m3, m4, m5, m6, m7,m9,m10} from "./controller.js";
 
 dotenv.config();
 
@@ -29,7 +29,10 @@ const processRequest = (request) => {
     // case "m8":
     //   return m8(JSON.parse(JSON.stringify(r[1])))
     case "m9":
-      return m9(JSON.parse(r[1]))}
+      return m9(JSON.parse(r[1]))
+    case "m10":
+      return m10(r[1])
+    }
 };
 
 serverTCP.on("connection", (socket) => {

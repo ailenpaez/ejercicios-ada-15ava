@@ -67,7 +67,7 @@ const m7 = (num) => {
   return factorial
 };
 
-
+//!VER QUE ONDA ESTE
 // 8. Escribe una función que tome un objeto como parámetro e imprima todas sus propiedades y valores.
 // const m8 = (objeto) => {
 
@@ -85,7 +85,15 @@ const m9 = (arrayNumeros) => {
 };
 
 // 10. Crea una función que tome un string como parámetro y devuelva true si es un palíndromo, o false en caso contrario.
-const m10 = () => {};
+const m10 = (string) => {
+  const miCandena = string.toLowerCase()
+  const cadenaInversa = miCandena.split('').reverse().join('');
+  if (miCandena === cadenaInversa){
+    return true
+  }else{
+    return false
+  }
+};
 
-export { m1, m2, m3, m4 , m5, m6, m7, m8, m9, m10};
+export { m1, m2, m3, m4 , m5, m6, m7, m9, m10};
 
