@@ -6,7 +6,6 @@ const m2 = (n) => {
   return n ** 2;
 };
 
-//3. Implementa una función que tome un array de números y devuelva la suma de todos los elementos.
 const m3 = (arrayNumeros) => {
   let suma = 0;
   arrayNumeros.forEach((numero) => {
@@ -15,7 +14,6 @@ const m3 = (arrayNumeros) => {
   return suma;
 };
 
-//4. Crea una función que reciba un string y devuelva el número de vocales que contiene.
 const m4 = (string) => {
   let vocales = 0;
   for (let letra of string) {
@@ -32,7 +30,6 @@ const m4 = (string) => {
 
   return vocales;
 };
-// 5. Escribe una función que tome un string de elementos separados por guiones y devuelva el array ordenado alfabéticamente.
 
 const m5 = (string) => {
   let stringConGuiones = string.split("-");
@@ -40,7 +37,6 @@ const m5 = (string) => {
   return stringOrdenado
 };
 
-// 6. Define una función que tome un array de cualquier tipo y devuelva el primer elemento.
 const m6 = (arrayIndistinto) => {
   if (arrayIndistinto.length > 0){
     return arrayIndistinto[0]
@@ -50,7 +46,6 @@ const m6 = (arrayIndistinto) => {
 
 };
 
-// 7. Implementa una función que tome un número como parámetro y devuelva su factorial.
 const m7 = (num) => {
   if (num < 0){
     return 'No se puede calcular el factorial de un nro negativo'
@@ -67,13 +62,10 @@ const m7 = (num) => {
   return factorial
 };
 
-//!VER QUE ONDA ESTE
+//! REVISAR -> NO LO PUDE HACER FUNCIONAR.
 // 8. Escribe una función que tome un objeto como parámetro e imprima todas sus propiedades y valores.
-// const m8 = (objeto) => {
+// const m8 = (objeto) => {};
 
-// };
-
-// 9. Implementa una función que tome un array de números y devuelva el número más grande.
 const m9 = (arrayNumeros) => {
   let numeroMayor = 0;
   for (let i = 1; i < arrayNumeros.length; i++) {
@@ -84,7 +76,6 @@ const m9 = (arrayNumeros) => {
   return numeroMayor;
 };
 
-// 10. Crea una función que tome un string como parámetro y devuelva true si es un palíndromo, o false en caso contrario.
 const m10 = (string) => {
   const miCandena = string.toLowerCase()
   const cadenaInversa = miCandena.split('').reverse().join('');
